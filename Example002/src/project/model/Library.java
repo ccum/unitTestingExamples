@@ -28,5 +28,17 @@ public class Library {
 		return books.size();
 	}
 
+	public void removeBook(String title) {
+		for(int i=0;i<books.size();i++) {
+			Book book= (Book)books.elementAt(i);
+			if(book.getTitle().equals(title)) {
+				books.remove(i);
+				break;
+			}
+				
+		}
+		
+	}
+
 
 }
